@@ -135,3 +135,4 @@ def generate_comfy(
     if fabric.device.type == "cuda":
         fabric.print(
             f"Memory used: {torch.cuda.max_memory_allocated() / 1e9:.02f} GB", file=sys.stderr)
+    return output
