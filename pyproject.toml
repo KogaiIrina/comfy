@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "comfy"
+version = "0.1.0"
+description = "AI-powered bot built to help people cope with their psychological problems"
+authors = ["Irina Kogai <kogayie1995@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+discord = "^2.2.2"
+python-dotenv = "^1.0.0"
+tiktoken = "^0.3.3"
+keras  = "^2.13.0"
+lit-gpt = {git = "https://github.com/Lightning-AI/lit-gpt.git"}
+torch = [
+  { version = ">=2.1.0dev+cpu", source = "pytorch-cpu", markers = "sys_platform == 'linux'", allow-prereleases = true }
+]
+torchvision = [
+  { version = ">=0.16.0dev+cpu", source = "pytorch-cpu", markers = "sys_platform == 'linux'", allow-prereleases = true }
+]
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+
+[tool.poetry.scripts]
+comfy = "comfy.app:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "pypi"
+priority = "default"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/nightly/cpu"
+priority = "explicit"
