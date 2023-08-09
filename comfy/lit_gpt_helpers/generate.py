@@ -20,6 +20,7 @@ sys.path.append(str(wd))
 
 model = None
 tokenizer = None
+fabric = None
 
 
 def generate_comfy(
@@ -61,7 +62,7 @@ def generate_comfy(
         devices: How many devices to use.
         precision: Indicates the Fabric precision setting to use.
     """
-    global model, tokenizer
+    global model, tokenizer, fabric
 
     if not model or not tokenizer:
         if strategy == "fsdp":
