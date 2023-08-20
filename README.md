@@ -11,7 +11,7 @@
 To run Comfy, you'll need to:
 - [install poetry](https://python-poetry.org/docs/#installation)
 - [create a Discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html) and obtain the Discord bot token
-- [obtain the id of the Discord guild (server)](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) that you want to add the bot to
+- [obtain the id of the Discord server](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) that you want to add the bot to
 
 After you have done this:
 1. Copy `.env.example` to `.env`.
