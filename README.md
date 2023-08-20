@@ -19,7 +19,7 @@ After you have done this:
 3. In the terminal, navigate to the project dir and run:
 ```sh
 poetry install
-poetry poetry run python comfy/app.py
+poetry run python comfy/app.py
 ```
 
 ## References
