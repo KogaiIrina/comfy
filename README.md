@@ -4,7 +4,7 @@
   <img alt="Comfy is an AI-powered psychologist-Discord bot." src="comfy-banner.png" width="900px" />
 </div>
 
-**Comfy** is an AI-powered psychologist-Discord bot.
+**Comfy** is a Discord-bot powerd by Falcon-7b, finetuned with the counsel-chat dataset using the Lit-GPT library.
 
 ## How can I add Comfy to my Discord server?
 
@@ -21,6 +21,10 @@ After you have done this:
 poetry install
 poetry poetry run python comfy/app.py
 ```
+
+## References
+- [Counsel chat: Bootstrapping high-quality therapy data]( https://towardsdatascience.com/counsel-chat-bootstrapping-high-quality-therapy-data-971b419f33da)
+- [How To Finetune GPT Like Large Language Models on a Custom Dataset](https://lightning.ai/blog/how-to-finetune-gpt-like-large-language-models-on-a-custom-dataset/)
 
 ## License
 
